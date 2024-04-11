@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+}
+
+.customer_information, .menu-list {
+    width: 100%;
+}
+
+.container {
+    border: 5px double black;
+    max-width: 800px;
+    width: 80%;
+    height: 600px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#header {
+    text-align: center;
+    border-bottom: 5px dotted black;
+    font-size: 1.5em;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.menus {
+    display: flex;
+    justify-content: space-between;
+}
+
+.customer_information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px dotted black;
+    padding: 10px;
+}
+
+.customer_information > label {
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+.customer_information > input {
+    padding: 10px;
+}
+
+.menu-list {
+    border: 2px dotted black;
+    padding: 10px;
+}
+
+.menu-list > h2 {
+    font-size: 1.2em;
+    border-bottom: 2px dotted black;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.list-order {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.increment_side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order_list {
+    list-style-type: none;
+}
+
+.list-order:nth-child(2) .order-list,
+.list-order:nth-child(3) .order-list {
+    margin-right: 13px;
+}
+
+.list-order:last-child {
+    display: block;
+}
+
+.pcs {
+    padding: 3px;
+    width: 40px;
+}
+
+.list_buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.list_buttons > button {
+    background: transparent;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.price {
+    display: inline-block;
+}
+
+.total {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.total_Price {
+    display: inline-block;
+}
+
+.information_list {
+    border: 2px solid black;
+    height: 39%;
+    padding: 10px;
+    background-color: rgb(216, 216, 216);
+}
+
+.btn {
+    cursor: pointer;
+    width: 20px;
+    padding: 3px;
+}
+
+#total-price {
+    margin-left: 10px;
+    padding: 5px;
+}
